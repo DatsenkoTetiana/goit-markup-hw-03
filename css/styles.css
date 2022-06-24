@@ -44,7 +44,6 @@ ul {
 
 .section {
     padding: 94px 0;
-    border: 5px solid #2196f3;
 }
 
 .container {
@@ -57,6 +56,7 @@ ul {
 .header {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .header-logo {
@@ -68,7 +68,6 @@ ul {
 }
 
 .logo {
-    margin: 24px 0 25px 0;
     font-weight: 700;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
@@ -129,14 +128,11 @@ span {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color: var(--grey-color);
 }
 
 .contacts .item:not(:first-child) {
     margin-left: 50px;
-}
-
-.contacts .contact {
-    color: var(--grey-color);
 }
 
 .contacts .contact:hover {
@@ -150,6 +146,9 @@ span {
 /* section */
 
 .section-hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    text-align: center;
     background-color: var(--darkblue-background-color);
 }
 
@@ -191,6 +190,7 @@ span {
 }
 
 .buttons-items {
+    justify-content: center;
     margin-bottom: 50px;
     display: flex;
 }
@@ -224,7 +224,14 @@ span {
     color: var(--white-color);
 }
 
-/* section-task */
+/* section-list */
+.lists {
+    display: flex;
+}
+
+.list:not(:last-child) {
+    margin-right: 30px;
+}
 
 .list .list-title {
     padding-bottom: 10px;
@@ -245,7 +252,14 @@ span {
     color: var(--grey-color);
 }
 
-/* professions + team*/
+/* section cart */
+.carts {
+    display: flex;
+}
+
+.cart:not(:last-child) {
+    margin-right: 30px;
+}
 
 .cart-title {
     text-align: center;
@@ -283,6 +297,7 @@ span {
 }
 
 .address {
+    margin-top: 20px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
@@ -299,18 +314,15 @@ span {
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
-    outline: 3px solid #2196f3;
 }
 
 .container-bg {
     width: calc((100% - 60px) / 3);
-    margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #212121;
 }
 
-.container-bg:nth-child(3n) {
-    margin-right: 0;
+.container-bg:not(:nth-child(3n)) {
+    margin-right: 30px;
 }
 
 .container-bg:nth-last-child(-n + 3) {
@@ -318,13 +330,13 @@ span {
 }
 
 .bg-img {
-    /* outline: 4px solid #212121; */
     display: block;
-    margin-bottom: 20px;
 }
 
 .container-bg-content {
     padding: 20px 24px;
+    border: 1px solid var(--border-cart-color);
+    border-top: 0;
 }
 
 .title-bg {
