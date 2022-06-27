@@ -139,7 +139,7 @@ span {
     color: var(--grey-color);
 }
 
-.contacts .item:not(:last-child) {
+.contacts .contacts-item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -341,16 +341,30 @@ span {
     color: var(--white-color);
 }
 
-/* .item .footer-item {
-    margin-right: 0;
-} */
 
-.contacts.contacts-footer {
+.contacts-footer {
     display: block;
 }
 
-.contact.contact-footer {
-    padding: 0;
+.contact-footer {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--grey-color);
+}
+
+.contact-footer:hover {
+    color: var(--blue-background-color);
+}
+
+.contact-footer:focus {
+    color: var(--blue-background-color);
+}
+
+.footer-item {
     margin-top: 9px;
 }
 
